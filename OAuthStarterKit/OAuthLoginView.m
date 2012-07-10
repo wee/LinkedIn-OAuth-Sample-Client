@@ -9,6 +9,10 @@
 #import <Foundation/NSNotificationQueue.h>
 #import "OAuthLoginView.h"
 
+
+#define API_KEY_LENGTH 12
+#define SECRET_KEY_LENGTH 16
+
 //
 // OAuth steps for version 1.0a:
 //
@@ -234,7 +238,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    if ([apikey length] < 64 || [secretkey length] < 64)
+    if ([apikey length] < API_KEY_LENGTH || [secretkey length] < SECRET_KEY_LENGTH)
     {
         UIAlertView *alert = [[UIAlertView alloc]
                           initWithTitle: @"OAuth Starter Kit"
