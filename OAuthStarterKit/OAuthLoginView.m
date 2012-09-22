@@ -41,6 +41,12 @@
                                     signatureProvider:nil] autorelease];
     
     [request setHTTPMethod:@"POST"];   
+    
+    OARequestParameter *nameParam = [[OARequestParameter alloc] initWithName:@"scope"
+                                                                       value:@"r_basicprofile+rw_nus"];
+    NSArray *params = [NSArray arrayWithObjects:nameParam, nil];
+    [request setParameters:params];
+    
     OADataFetcher *fetcher = [[[OADataFetcher alloc] init] autorelease];
     [fetcher fetchDataWithRequest:request
                          delegate:self
