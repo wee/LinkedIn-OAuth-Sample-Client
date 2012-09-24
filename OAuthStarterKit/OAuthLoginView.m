@@ -46,6 +46,9 @@
                                                                        value:@"r_basicprofile+rw_nus"];
     NSArray *params = [NSArray arrayWithObjects:nameParam, nil];
     [request setParameters:params];
+    OARequestParameter * scopeParameter=[OARequestParameter requestParameter:@"scope" value:@"r_fullprofile rw_nus"];
+    
+    [request setParameters:[NSArray arrayWithObject:scopeParameter]];
     
     OADataFetcher *fetcher = [[[OADataFetcher alloc] init] autorelease];
     [fetcher fetchDataWithRequest:request
