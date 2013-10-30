@@ -33,7 +33,6 @@
 		659410F11353A39900826837 /* OAAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 659410DD1353A39900826837 /* OAAttachment.m */; };
 		659410F21353A39900826837 /* linkedInBluebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 659410E01353A39900826837 /* linkedInBluebutton.png */; };
 		659410F31353A39900826837 /* linkedInBluebutton-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 659410E11353A39900826837 /* linkedInBluebutton-highlight.png */; };
-		659410F41353A39900826837 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 659410E21353A39900826837 /* JSONKit.m */; };
 		659411031353A41600826837 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 659410F61353A41600826837 /* Base64Transcoder.c */; };
 		659411041353A41600826837 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 659410F81353A41600826837 /* hmac.c */; };
 		659411051353A41600826837 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 659410FA1353A41600826837 /* sha1.c */; };
@@ -93,8 +92,6 @@
 		659410DF1353A39900826837 /* OAAtachmentF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAtachmentF.h; sourceTree = "<group>"; };
 		659410E01353A39900826837 /* linkedInBluebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkedInBluebutton.png; sourceTree = "<group>"; };
 		659410E11353A39900826837 /* linkedInBluebutton-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "linkedInBluebutton-highlight.png"; sourceTree = "<group>"; };
-		659410E21353A39900826837 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		659410E31353A39900826837 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		659410F61353A41600826837 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
 		659410F71353A41600826837 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
 		659410F81353A41600826837 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
@@ -158,7 +155,6 @@
 			children = (
 				659410BB1353A29200826837 /* READ_ME.txt */,
 				659411111353A61B00826837 /* Views */,
-				659411131353A64A00826837 /* JSON */,
 				659411121353A63E00826837 /* OAuth */,
 				659410F51353A41600826837 /* Crytpo */,
 				659410FC1353A41600826837 /* Categories */,
@@ -261,15 +257,6 @@
 			name = OAuth;
 			sourceTree = "<group>";
 		};
-		659411131353A64A00826837 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				659410E21353A39900826837 /* JSONKit.m */,
-				659410E31353A39900826837 /* JSONKit.h */,
-			);
-			name = JSON;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,7 +343,6 @@
 				659410EF1353A39900826837 /* OAConsumer.m in Sources */,
 				659410F01353A39900826837 /* OACall.m in Sources */,
 				659410F11353A39900826837 /* OAAttachment.m in Sources */,
-				659410F41353A39900826837 /* JSONKit.m in Sources */,
 				659411031353A41600826837 /* Base64Transcoder.c in Sources */,
 				659411041353A41600826837 /* hmac.c in Sources */,
 				659411051353A41600826837 /* sha1.c in Sources */,
